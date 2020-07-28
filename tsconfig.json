@@ -1,0 +1,19 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "incremental": true, 
+    "target": "es2018",
+    "module": "commonjs",               
+    "lib": ["esnext"],
+    "types": ["jest"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+  }
+}
