@@ -9,7 +9,7 @@ describe("UsersController Test Cases", () => {
   it("should return false for invalid user id", () => {
     const controller = new UsersController();
     const checkResult = controller.isValidId(-1);
-    expect(checkResult).toBeFalsy(); // OR expect(checkResult).toBe(false)
+    expect(checkResult).toBeFalsy();
   });
 
   /**
@@ -27,6 +27,10 @@ describe("UsersController Test Cases", () => {
     }
   });
 
+  /**
+   * fetch user data asynchronously and
+   * verify expected output
+   */
   it(
     "should return user data",
     async () => {
